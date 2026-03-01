@@ -1368,6 +1368,7 @@ tr:last-child td {
 
     .footer-links {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0;
     }
 }
