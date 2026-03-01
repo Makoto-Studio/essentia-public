@@ -575,16 +575,6 @@ li {
     box-shadow: var(--shadow-sm);
 }
 
-.philosophy-card.accent {
-    border-color: var(--accent);
-    background-color: var(--accent-subtle);
-}
-
-.philosophy-card.accent:hover {
-    border-color: var(--accent-hover);
-    box-shadow: 0 4px 16px var(--accent-glow);
-}
-
 .philosophy-step {
     font-size: 0.6875rem;
     font-weight: 600;
@@ -620,30 +610,168 @@ li {
 }
 
 /* =========================================================
-   Morning Review — Card Stack
+   Philosophy Detail Sections
    ========================================================= */
 
-.morning-review {
+.philosophy-detail {
     padding: var(--section-gap) 0;
+    background-color: var(--bg);
+}
+
+.philosophy-detail--alt {
     background-color: var(--bg-secondary);
 }
 
-.morning-review-inner {
+.philosophy-detail-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px;
     align-items: center;
 }
 
-.morning-review-text .section-title {
+.philosophy-detail-inner--reversed {
+    direction: rtl;
+}
+
+.philosophy-detail-inner--reversed > * {
+    direction: ltr;
+}
+
+.philosophy-detail-text .section-title {
     margin-bottom: 20px;
 }
 
-.morning-review-text p {
+.philosophy-detail-text p {
     font-size: 1.0625rem;
     line-height: 1.7;
     margin-bottom: 0;
 }
+
+.philosophy-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+/* Mockup — Captura */
+.capture-mockup,
+.plan-mockup {
+    width: 200px;
+    min-height: 280px;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.mockup-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.mockup-item {
+    height: 14px;
+    background-color: var(--border);
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+.mockup-item--short {
+    width: 60%;
+}
+
+/* Mockup — Planifica */
+.mockup-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.mockup-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--border);
+    flex-shrink: 0;
+}
+
+.mockup-dot--accent {
+    background-color: var(--accent);
+}
+
+.mockup-line {
+    flex: 1;
+    height: 10px;
+    background-color: var(--border);
+    border-radius: 3px;
+}
+
+.mockup-line--short {
+    flex: 0.6;
+}
+
+.mockup-badge {
+    width: 36px;
+    height: 18px;
+    border-radius: 6px;
+    background-color: var(--accent-subtle);
+    border: 1px solid var(--accent);
+    flex-shrink: 0;
+}
+
+.mockup-badge--muted {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border);
+}
+
+/* Tags en capture y plan cards */
+.capture-card-meta,
+.plan-card-meta {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.capture-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    background-color: var(--bg-secondary);
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+.plan-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.plan-tag--date {
+    color: var(--accent);
+    background-color: var(--accent-subtle);
+    border: 1px solid var(--accent);
+}
+
+.plan-tag--priority {
+    color: var(--text-secondary);
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border);
+}
+
+/* Morning Review — Card Stack (mantenido para compatibilidad) */
 
 /* Card Stack */
 .card-stack {
@@ -773,15 +901,23 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    align-items: end;
+    align-items: start;
 }
 
 .platform-card {
     text-align: center;
 }
 
+.device-area {
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
 .device-silhouette {
-    margin: 0 auto 24px;
+    margin: 0;
     background-color: var(--bg-secondary);
     border: 2px solid var(--border);
     position: relative;
@@ -1129,6 +1265,8 @@ li {
 .reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
 .reveal-stagger.visible > *:nth-child(5) { transition-delay: 320ms; }
 .reveal-stagger.visible > *:nth-child(6) { transition-delay: 400ms; }
+.reveal-stagger.visible > *:nth-child(7) { transition-delay: 480ms; }
+.reveal-stagger.visible > *:nth-child(8) { transition-delay: 560ms; }
 
 .reveal-stagger.visible > * {
     opacity: 1;
@@ -1318,9 +1456,13 @@ tr:last-child td {
         gap: 12px;
     }
 
-    .morning-review-inner {
+    .philosophy-detail-inner {
         grid-template-columns: 1fr;
         gap: 48px;
+    }
+
+    .philosophy-detail-inner--reversed {
+        direction: ltr;
     }
 
     .card-stack {
@@ -1335,7 +1477,12 @@ tr:last-child td {
     .platform-cards {
         grid-template-columns: 1fr;
         gap: 32px;
-        align-items: center;
+        align-items: start;
+    }
+
+    .device-area {
+        height: auto;
+        margin-bottom: 16px;
     }
 
     .device-phone { width: 80px; height: 156px; }

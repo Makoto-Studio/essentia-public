@@ -9,7 +9,7 @@
     <link rel="alternate" hreflang="en" href="https://essentia.makotostudio.dev/en/">
     <link rel="alternate" hreflang="es" href="https://essentia.makotostudio.dev/es/">
     <link rel="alternate" hreflang="x-default" href="https://essentia.makotostudio.dev/en/">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=3">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=4">
     <meta name="theme-color" content="#6B8E7A" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#8FB8A2" media="(prefers-color-scheme: dark)">
     <!-- Open Graph -->
@@ -122,47 +122,135 @@
                 <span class="philosophy-step">Paso 01</span>
                 <h3>Captura</h3>
                 <span class="philosophy-tagline">Tu cabeza libre, tus ideas a salvo.</span>
-                <p>Anota tareas, notas e ideas al instante — sin decidir dónde van. La bandeja de entrada lo guarda todo sin juzgarlo. Captura rápida desde el widget, la extensión para compartir o directamente en la app. Vacía tu mente cuando necesitas enfocarte.</p>
             </div>
             <div class="philosophy-card">
                 <span class="philosophy-step">Paso 02</span>
                 <h3>Planifica</h3>
                 <span class="philosophy-tagline">Solo lo que realmente merece tu tiempo.</span>
-                <p>Cuando estés listo, asigna fechas, prioridades, recurrencias y ubicaciones solo a las tareas que merecen un lugar en tu día. El Triaje te guía elemento por elemento para procesar tu bandeja con calma, sin sobrecargas.</p>
             </div>
             <div class="philosophy-card">
                 <span class="philosophy-step">Paso 03</span>
                 <h3>Revisa</h3>
                 <span class="philosophy-tagline">Sin culpa. Solo claridad.</span>
-                <p>Cada mañana, decide qué hacer con lo que quedó pendiente: muévelo a hoy, pásalo para después, o déjalo ir. Tú controlas el ritmo — no la app. Empieza fresco cada día, sin arrastrar la lista de ayer.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- =========================================================
-     Morning Review
+     Philosophy Detail — Captura
      ========================================================= -->
-<section class="morning-review" id="revision-matutina" aria-labelledby="review-heading">
+<section class="philosophy-detail" aria-labelledby="capture-heading">
     <div class="container-wide">
-        <div class="morning-review-inner">
-            <div class="morning-review-text">
-                <span class="section-label">Revisión Matutina</span>
+        <div class="philosophy-detail-inner">
+            <div class="philosophy-detail-text">
+                <span class="section-label">Paso 01 — Captura</span>
+                <h2 class="section-title" id="capture-heading">Vacía tu cabeza. essentia se encarga del resto.</h2>
+                <p>Anota tareas, notas e ideas al instante — sin decidir dónde van ni cómo clasificarlas. La bandeja de entrada lo guarda todo sin juzgarlo. Captura rápida desde el widget en tu pantalla de inicio, la extensión para compartir desde cualquier app, o directamente dentro de essentia. Vacía tu mente cuando necesitas enfocarte, y procesa después cuando estés listo.</p>
+            </div>
+            <div class="philosophy-visual">
+                <div class="visual-option-a">
+                    <div class="capture-mockup" aria-hidden="true">
+                        <div class="mockup-screen">
+                            <div class="mockup-item"></div>
+                            <div class="mockup-item"></div>
+                            <div class="mockup-item mockup-item--short"></div>
+                            <div class="mockup-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-option-b">
+                    <div class="card-stack capture-stack" aria-hidden="true">
+                        <div class="review-card"></div>
+                        <div class="review-card"></div>
+                        <div class="review-card">
+                            <p class="review-card-task">Comprar leche y fruta</p>
+                            <div class="capture-card-meta">
+                                <span class="capture-tag">Bandeja de entrada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     Philosophy Detail — Planifica
+     ========================================================= -->
+<section class="philosophy-detail philosophy-detail--alt" aria-labelledby="plan-heading">
+    <div class="container-wide">
+        <div class="philosophy-detail-inner philosophy-detail-inner--reversed">
+            <div class="philosophy-detail-text">
+                <span class="section-label">Paso 02 — Planifica</span>
+                <h2 class="section-title" id="plan-heading">Cada tarea en su lugar, cuando tú decidas.</h2>
+                <p>Cuando estés listo para procesar, el Triaje te guía elemento por elemento a través de tu bandeja de entrada. Asigna fechas, prioridades, recurrencias y ubicaciones solo a las tareas que realmente merecen un lugar en tu día. Sin sobrecargas, sin decisiones apresuradas — a tu ritmo y con toda la calma.</p>
+            </div>
+            <div class="philosophy-visual">
+                <div class="visual-option-a">
+                    <div class="plan-mockup" aria-hidden="true">
+                        <div class="mockup-screen">
+                            <div class="mockup-list-item">
+                                <div class="mockup-dot mockup-dot--accent"></div>
+                                <div class="mockup-line"></div>
+                                <div class="mockup-badge"></div>
+                            </div>
+                            <div class="mockup-list-item">
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-line mockup-line--short"></div>
+                                <div class="mockup-badge mockup-badge--muted"></div>
+                            </div>
+                            <div class="mockup-list-item">
+                                <div class="mockup-dot mockup-dot--accent"></div>
+                                <div class="mockup-line"></div>
+                                <div class="mockup-badge"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-option-b">
+                    <div class="card-stack plan-stack" aria-hidden="true">
+                        <div class="review-card"></div>
+                        <div class="review-card"></div>
+                        <div class="review-card">
+                            <p class="review-card-task">Preparar presentación del cliente</p>
+                            <div class="plan-card-meta">
+                                <span class="plan-tag plan-tag--date">Mañana</span>
+                                <span class="plan-tag plan-tag--priority">Alta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     Philosophy Detail — Revisa
+     ========================================================= -->
+<section class="philosophy-detail" aria-labelledby="review-heading">
+    <div class="container-wide">
+        <div class="philosophy-detail-inner">
+            <div class="philosophy-detail-text">
+                <span class="section-label">Paso 03 — Revisa</span>
                 <h2 class="section-title" id="review-heading">No arrastres la lista de ayer.</h2>
                 <p>Con un solo toque desde la vista Hoy, revisa todo lo que quedó pendiente. Por cada tarea, decide: <em>muévela a hoy, pásala para después, o déjala ir.</em> Y desde Organizar, el Triaje te guía elemento por elemento para procesar tu bandeja de entrada. Empieza fresco, no enterrado.</p>
             </div>
-            <div class="card-stack" aria-hidden="true">
-                <!-- Tarjeta trasera (abstracta) -->
-                <div class="review-card"></div>
-                <!-- Tarjeta media (abstracta) -->
-                <div class="review-card"></div>
-                <!-- Tarjeta frontal -->
-                <div class="review-card">
-                    <p class="review-card-task">Revisar el borrador de la propuesta del proyecto</p>
-                    <div class="review-card-actions">
-                        <button class="review-action today" type="button">Hoy</button>
-                        <button class="review-action later" type="button">Después</button>
-                        <button class="review-action letgo" type="button">Dejar ir</button>
+            <div class="philosophy-visual">
+                <div class="visual-option-b">
+                    <div class="card-stack" aria-hidden="true">
+                        <div class="review-card"></div>
+                        <div class="review-card"></div>
+                        <div class="review-card">
+                            <p class="review-card-task">Revisar el borrador de la propuesta del proyecto</p>
+                            <div class="review-card-actions">
+                                <button class="review-action today" type="button">Hoy</button>
+                                <button class="review-action later" type="button">Después</button>
+                                <button class="review-action letgo" type="button">Dejar ir</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,7 +266,7 @@
         <div class="section-header centered">
             <span class="section-label">Funcionalidades</span>
             <h2 class="section-title" id="features-heading">Todo lo que necesitas, nada que no.</h2>
-            <p class="section-subtitle">Seis capacidades enfocadas que cubren el ciclo completo de la captura a la claridad.</p>
+            <p class="section-subtitle">Funcionalidades enfocadas que cubren el ciclo completo de la captura a la claridad.</p>
         </div>
         <div class="features-grid reveal-stagger">
             <div class="feature-card">
@@ -233,6 +321,27 @@
                 <p class="feature-title">Funciona sin internet</p>
                 <p class="feature-desc">Tus datos viven en tu dispositivo. essentia funciona completamente sin conexión. La sincronización ocurre en segundo plano cuando hay red.</p>
             </div>
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1"/>
+                </svg>
+                <p class="feature-title">Widgets y extensión para compartir</p>
+                <p class="feature-desc">Captura desde la pantalla de inicio con widgets o comparte contenido desde cualquier app directamente a tu bandeja de essentia.</p>
+            </div>
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                    <polyline points="9 16 11 18 15 14"/>
+                </svg>
+                <p class="feature-title">Integración con calendario</p>
+                <p class="feature-desc">Visualiza tus eventos junto a tus tareas en la vista Hoy. essentia calcula tu disponibilidad real para que planifiques con datos, no con suposiciones.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -249,22 +358,28 @@
         </div>
         <div class="platform-cards reveal-stagger">
             <div class="platform-card">
-                <div class="device-silhouette device-phone" aria-hidden="true">
-                    <div class="device-screen"></div>
+                <div class="device-area">
+                    <div class="device-silhouette device-phone" aria-hidden="true">
+                        <div class="device-screen"></div>
+                    </div>
                 </div>
                 <p class="platform-card-title">iPhone</p>
                 <p class="platform-card-desc">Captura en marcha, revisa al despertar. Diseñada para uso con una mano — anota cualquier idea en segundos y empieza cada día con claridad.</p>
             </div>
             <div class="platform-card">
-                <div class="device-silhouette device-tablet" aria-hidden="true">
-                    <div class="device-screen"></div>
+                <div class="device-area">
+                    <div class="device-silhouette device-tablet" aria-hidden="true">
+                        <div class="device-screen"></div>
+                    </div>
                 </div>
                 <p class="platform-card-title">iPad</p>
                 <p class="platform-card-desc">Más espacio para planificar con intención. Aprovecha la pantalla grande para organizar tus colecciones y revisar el contexto completo de tu semana.</p>
             </div>
             <div class="platform-card">
-                <div class="device-silhouette device-mac" aria-hidden="true">
-                    <div class="device-screen"></div>
+                <div class="device-area">
+                    <div class="device-silhouette device-mac" aria-hidden="true">
+                        <div class="device-screen"></div>
+                    </div>
                 </div>
                 <p class="platform-card-title">Mac</p>
                 <p class="platform-card-desc">Tu base de operaciones desde el escritorio. La app de barra de menú te permite capturar y revisar sin interrumpir tu flujo de trabajo.</p>
