@@ -380,6 +380,33 @@ li {
     text-decoration: none;
 }
 
+.nav-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: var(--text-primary);
+    color: var(--bg) !important;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.15s, transform 0.1s;
+    margin-left: 4px;
+}
+
+.nav-download:hover {
+    background-color: var(--text-secondary);
+    color: var(--bg) !important;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.nav-download:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
 /* =========================================================
    Hero
    ========================================================= */
@@ -581,6 +608,15 @@ li {
     color: var(--text-secondary);
     margin-bottom: 0;
     line-height: 1.6;
+}
+
+.philosophy-tagline {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
 
 /* =========================================================
@@ -1352,12 +1388,11 @@ tr:last-child td {
         width: 100%;
     }
 
-    .site-nav a:not(.lang-switcher) {
+    .site-nav a:not(.nav-download) {
         display: none;
     }
 
-    .site-nav .nav-features,
-    .site-nav .nav-how {
+    .nav-download-text {
         display: none;
     }
 
