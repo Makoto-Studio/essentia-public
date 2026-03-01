@@ -47,177 +47,234 @@
     <div class="container">
         <div class="legal-header">
             <h1>Privacy Policy</h1>
-            <p class="legal-meta">Last updated: March 1, 2025</p>
+            <p class="legal-meta">Last updated: March 1, 2026</p>
         </div>
 
         <div class="legal-content">
 
             <section>
-                <h2>1. Introduction</h2>
-                <p>Makoto Studio ("we", "our", or "us") operates essentia, a personal organization application available for iPhone, iPad, and Mac. This Privacy Policy explains how we collect, use, and protect your information when you use essentia.</p>
-                <p>By using essentia, you agree to the collection and use of information as described in this policy. If you have questions or concerns, please contact us at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>.</p>
+                <h2>1. Data Controller</h2>
+                <p>Makoto Studio is the data controller responsible for processing your personal data in connection with essentia. Contact details:</p>
+                <ul>
+                    <li><strong>Trade name:</strong> Makoto Studio</li>
+                    <li><strong>Email:</strong> <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a></li>
+                    <li><strong>Address:</strong> [ADDRESS — to be completed upon formal registration]</li>
+                    <li><strong>Tax ID (NIF):</strong> [NIF — to be completed upon formal registration]</li>
+                </ul>
+                <p>As Makoto Studio is an individual developer without a large-scale processing operation and without processing special categories of data on a large scale, the appointment of a Data Protection Officer (DPO) is not required under Article 37 GDPR. For all privacy-related enquiries, contact us directly at the email address above.</p>
             </section>
 
             <section>
-                <h2>2. Data We Collect</h2>
-                <p>The following tables describe the data essentia collects, consistent with Apple's App Privacy nutrition label.</p>
+                <h2>2. Scope</h2>
+                <p>This Privacy Policy applies to:</p>
+                <ul>
+                    <li>The essentia application for iPhone, iPad, and Mac;</li>
+                    <li>Our website at <a href="https://essentia.makotostudio.dev">essentia.makotostudio.dev</a>;</li>
+                    <li>Any related services, APIs, or backend systems operated by Makoto Studio in connection with essentia.</li>
+                </ul>
+                <p>It does not apply to third-party services that you may access through or in connection with essentia (e.g., Apple services), which are governed by their own privacy policies.</p>
+            </section>
 
-                <h3>Account Data (Linked to You)</h3>
+            <section>
+                <h2>3. Data We Collect</h2>
+                <p>The following tables describe the personal data essentia collects, consistent with Apple's App Privacy nutrition label.</p>
+
+                <h3>3.1 Account Data (Linked to You)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Email address</td>
-                                <td>Collected at registration</td>
+                                <td>Provided at registration</td>
                                 <td>Authentication, account recovery</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
                                 <td>Password</td>
-                                <td>Hashed by Supabase (bcrypt); never stored in plaintext</td>
+                                <td>Hashed (bcrypt) by Supabase; never stored in plaintext</td>
                                 <td>Authentication</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>User Content (Linked to You, essentia Pro only)</h3>
+                <h3>3.2 User Content (Linked to You — essentia Pro only)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Tasks and notes</td>
-                                <td>Titles, notes, due dates, priorities, recurrence rules</td>
-                                <td>Core app functionality, cloud sync</td>
+                                <td>Titles, note bodies, due dates, priorities, completion status, recurrence rules</td>
+                                <td>Core app functionality, cross-device sync</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
                                 <td>Collections</td>
-                                <td>Collection names and membership</td>
-                                <td>Core app functionality, cloud sync</td>
+                                <td>Collection names and task membership</td>
+                                <td>Core app functionality, cross-device sync</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
                                 <td>Checklists</td>
                                 <td>Checklist items associated with tasks</td>
-                                <td>Core app functionality, cloud sync</td>
+                                <td>Core app functionality, cross-device sync</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
-                                <td>Location names</td>
-                                <td>Text labels for location-based reminders (not GPS coordinates)</td>
-                                <td>Core app functionality, cloud sync</td>
+                                <td>Locations</td>
+                                <td>Location name (text label) and geographic coordinates (latitude and longitude) of places associated with tasks</td>
+                                <td>Location-based reminders, core app functionality, cross-device sync</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p><em>Free tier users: all content stays on-device only and is never uploaded to our servers.</em></p>
+                <p><em>Free tier users: all content remains on-device only in a local SQLite database and is never uploaded to our servers.</em></p>
 
-                <h3>Device Data (Linked to You)</h3>
+                <h3>3.3 Device Data (Linked to You)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Device push token (APNs)</td>
+                                <td>Push token (APNs)</td>
                                 <td>Apple-issued token for this device</td>
-                                <td>Push notifications</td>
+                                <td>Delivery of push notifications</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion or token invalidation</td>
                             </tr>
                             <tr>
                                 <td>Device name</td>
                                 <td>e.g., "Javier's iPhone"</td>
                                 <td>Multi-device identification (Pro)</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
                                 <td>Platform</td>
                                 <td>iOS, iPadOS, or macOS</td>
                                 <td>Multi-device sync (Pro)</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                             <tr>
                                 <td>Device ID</td>
-                                <td>Vendor-scoped identifier (UIDevice.identifierForVendor)</td>
+                                <td>Vendor-scoped identifier (UIDevice.identifierForVendor) — not shared with third parties</td>
                                 <td>Multi-device identification (Pro)</td>
+                                <td>Performance of contract</td>
+                                <td>Until account deletion</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>Analytics Data (Not Linked to You)</h3>
+                <h3>3.4 Analytics Data (Not Linked to You)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Usage events</td>
-                                <td>Screen views, feature interactions — no user content is included</td>
-                                <td>App improvement, analytics</td>
+                                <td>Screen views, feature interactions — no user content, no personal identifiers, no user IDs</td>
+                                <td>App improvement, understanding feature usage</td>
+                                <td>Legitimate interests</td>
+                                <td>14 months (Firebase default)</td>
                             </tr>
                             <tr>
                                 <td>Subscription tier</td>
-                                <td>Free or Pro (anonymous)</td>
+                                <td>Free or Pro (anonymous, not linked to account)</td>
                                 <td>Usage analytics</td>
+                                <td>Legitimate interests</td>
+                                <td>14 months (Firebase default)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>Crash Data (Not Linked to You)</h3>
+                <h3>3.5 Crash Data (Not Linked to You)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Crash reports</td>
-                                <td>Stack traces, device model, OS version — no user content</td>
+                                <td>Stack traces, device model, OS version — no user content, no personal identifiers</td>
                                 <td>Crash diagnosis and bug fixing</td>
+                                <td>Legitimate interests</td>
+                                <td>90 days (Firebase Crashlytics default)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>Purchase Data (Linked to You)</h3>
+                <h3>3.6 Purchase Data (Linked to You)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Data Type</th>
+                                <th>Data</th>
                                 <th>Details</th>
                                 <th>Purpose</th>
+                                <th>Legal Basis</th>
+                                <th>Retention</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Subscription history</td>
-                                <td>essentia Pro purchase and renewal history via Apple / RevenueCat</td>
+                                <td>essentia Pro purchase and renewal history via Apple / RevenueCat — payment card details are never accessible to us</td>
                                 <td>Subscription management, entitlement verification</td>
+                                <td>Performance of contract; legal obligation (6 years — Spanish Commercial Code)</td>
+                                <td>6 years from the date of the transaction</td>
                             </tr>
                         </tbody>
                     </table>
@@ -225,39 +282,78 @@
             </section>
 
             <section>
-                <h2>3. What We Do NOT Collect</h2>
+                <h2>4. Data We Do NOT Collect</h2>
                 <ul>
-                    <li>Advertising identifiers (IDFA) — we do not use ad tracking</li>
-                    <li>Cross-app or cross-site tracking</li>
-                    <li>GPS coordinates or precise location data</li>
-                    <li>The content of your tasks or notes in analytics events</li>
-                    <li>Contact lists, photos, or media</li>
-                    <li>Browsing history</li>
-                    <li>Any data sold or shared with advertisers</li>
+                    <li>Advertising identifiers (IDFA) — we do not use or request ad tracking</li>
+                    <li>Cross-app or cross-site tracking data</li>
+                    <li>Real-time GPS location (we do not request runtime location permission)</li>
+                    <li>The content of your tasks or notes within analytics events</li>
+                    <li>Contact lists, photos, camera, microphone, or media</li>
+                    <li>Browsing history or web activity</li>
+                    <li>Health or biometric data</li>
+                    <li>Any data sold, licensed, or shared with advertisers or data brokers</li>
+                    <li>User profiles for advertising or profiling purposes</li>
                 </ul>
+                <p>essentia's Privacy Manifest declares <code>NSPrivacyTracking: false</code> and lists no tracking domains.</p>
             </section>
 
             <section>
-                <h2>4. How We Use Your Data</h2>
-                <ul>
-                    <li><strong>Authentication:</strong> To create and secure your account</li>
-                    <li><strong>Core functionality:</strong> To store, organize, and display your tasks and notes</li>
-                    <li><strong>Cloud sync (Pro):</strong> To sync your data across your devices</li>
-                    <li><strong>Push notifications:</strong> To deliver reminders you configure</li>
-                    <li><strong>Analytics:</strong> To understand how features are used and improve the app</li>
-                    <li><strong>Crash reporting:</strong> To identify and fix bugs</li>
-                    <li><strong>Subscription management:</strong> To verify and maintain your essentia Pro entitlement</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>5. Third-Party Services</h2>
+                <h2>5. Lawful Basis for Processing</h2>
+                <p>Under Article 6 of the GDPR, we process your personal data on the following legal bases:</p>
                 <div class="table-wrap">
                     <table>
                         <thead>
                             <tr>
-                                <th>Service</th>
+                                <th>Legal Basis</th>
+                                <th>When We Rely On It</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Performance of a contract</strong> (Art. 6(1)(b))</td>
+                                <td>Account creation, authentication, user content sync, device management, push notifications, subscription management</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Legitimate interests</strong> (Art. 6(1)(f))</td>
+                                <td>Anonymous analytics and crash reporting to improve the App. Our interest in understanding usage and fixing bugs is balanced against your minimal privacy impact (no PII involved)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Legal obligation</strong> (Art. 6(1)(c))</td>
+                                <td>Retention of purchase/transaction data for 6 years under the Spanish Commercial Code</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Where we rely on legitimate interests, you have the right to object to that processing at any time. See Section 12 for your rights.</p>
+            </section>
+
+            <section>
+                <h2>6. How We Use Your Data</h2>
+                <ul>
+                    <li><strong>Authentication:</strong> To create and secure your account and verify your identity.</li>
+                    <li><strong>Core functionality:</strong> To store, organise, and display your tasks, notes, and collections.</li>
+                    <li><strong>Cloud sync (Pro):</strong> To synchronise your data across your Apple devices.</li>
+                    <li><strong>Push notifications:</strong> To deliver reminders you configure, including task titles sent via APNs.</li>
+                    <li><strong>Analytics:</strong> To understand how features are used and guide product improvements (anonymous, no PII).</li>
+                    <li><strong>Crash reporting:</strong> To identify, diagnose, and fix bugs and crashes (anonymous).</li>
+                    <li><strong>Subscription management:</strong> To verify and maintain your essentia Pro entitlement.</li>
+                    <li><strong>Security:</strong> To detect, investigate, and prevent abuse, fraud, and security incidents.</li>
+                    <li><strong>Legal compliance:</strong> To comply with applicable laws, regulations, and legal process.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Third-Party Processors</h2>
+                <p>We share your data only with trusted processors that help us operate the Service. We have data processing agreements in place with each processor where required by GDPR.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Processor</th>
                                 <th>Purpose</th>
+                                <th>Data Shared</th>
+                                <th>Processing Location</th>
+                                <th>Safeguards</th>
                                 <th>Privacy Policy</th>
                             </tr>
                         </thead>
@@ -265,41 +361,73 @@
                             <tr>
                                 <td>Supabase</td>
                                 <td>Authentication and cloud database (Pro sync)</td>
+                                <td>Email, hashed password, user content, device data</td>
+                                <td>EU (Frankfurt, Germany)</td>
+                                <td>EU-hosted; Supabase DPA</td>
                                 <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
                             </tr>
                             <tr>
-                                <td>Firebase Analytics</td>
+                                <td>Firebase Analytics (Google)</td>
                                 <td>Anonymous usage analytics</td>
+                                <td>Anonymous usage events; no PII, no user IDs</td>
+                                <td>USA (and other Google regions)</td>
+                                <td>EU-US Data Privacy Framework; Standard Contractual Clauses (SCCs)</td>
                                 <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
                             </tr>
                             <tr>
-                                <td>Firebase Crashlytics</td>
+                                <td>Firebase Crashlytics (Google)</td>
                                 <td>Crash reporting and diagnosis</td>
+                                <td>Crash reports (stack traces, device model, OS); no user content</td>
+                                <td>USA (and other Google regions)</td>
+                                <td>EU-US Data Privacy Framework; Standard Contractual Clauses (SCCs)</td>
                                 <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
                             </tr>
                             <tr>
                                 <td>RevenueCat</td>
                                 <td>Subscription management and entitlement verification</td>
+                                <td>Subscription history, purchase events</td>
+                                <td>USA</td>
+                                <td>Standard Contractual Clauses (SCCs)</td>
                                 <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
                             </tr>
                             <tr>
                                 <td>Apple (APNs)</td>
                                 <td>Push notification delivery</td>
+                                <td>Push token, notification payload (may include task title)</td>
+                                <td>Apple's global infrastructure</td>
+                                <td>Apple's standard terms; Apple DPA</td>
                                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
                             </tr>
                             <tr>
                                 <td>Apple (StoreKit)</td>
                                 <td>In-app purchase processing</td>
+                                <td>Purchase and subscription events (managed by Apple)</td>
+                                <td>Apple's global infrastructure</td>
+                                <td>Apple's standard terms</td>
                                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
                             </tr>
                             <tr>
                                 <td>Apple (MapKit)</td>
-                                <td>Location search for task location labels</td>
+                                <td>Place search for location labels</td>
+                                <td>Search text you type when adding a location to a task</td>
+                                <td>Apple's global infrastructure</td>
+                                <td>Apple's standard terms</td>
                                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
                             </tr>
                             <tr>
                                 <td>Apple (EventKit)</td>
                                 <td>Calendar integration (local only)</td>
+                                <td>Calendar data stays on-device; not transmitted to us</td>
+                                <td>On-device only</td>
+                                <td>Apple's system-level access controls</td>
+                                <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
+                            </tr>
+                            <tr>
+                                <td>Apple (LinkPresentation)</td>
+                                <td>URL preview generation for links in notes</td>
+                                <td>URLs you include in notes (fetched by your device)</td>
+                                <td>On-device / Apple CDN</td>
+                                <td>Apple's standard terms</td>
                                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
                             </tr>
                         </tbody>
@@ -308,67 +436,159 @@
             </section>
 
             <section>
-                <h2>6. Local-First Architecture</h2>
-                <p>essentia is designed local-first. All tasks, notes, collections, and other content are stored on your device in a local database. Cloud sync is an optional feature available exclusively to essentia Pro subscribers.</p>
-                <p>If you use the free tier, none of your personal content is ever transmitted to our servers. The app is fully functional offline with no degradation in core features.</p>
-            </section>
-
-            <section>
-                <h2>7. Data Retention and Deletion</h2>
+                <h2>8. International Data Transfers</h2>
+                <p>Our primary backend (Supabase) is hosted in the European Union (Frankfurt, Germany) and your data does not leave the EU in that context.</p>
+                <p>However, we use the following third-party services that process data outside the EU/EEA:</p>
                 <ul>
-                    <li><strong>Sign out:</strong> Clears local data from the device. Remote data (Pro) remains in your account until deletion.</li>
-                    <li><strong>Delete account:</strong> Permanently deletes your account and all associated remote data (tasks, collections, devices). This action is irreversible.</li>
-                    <li><strong>Downgrade from Pro:</strong> Local data remains intact. Remote sync pauses; previously synced data is preserved on the server but not updated until you resubscribe.</li>
+                    <li><strong>Firebase Analytics and Firebase Crashlytics (Google):</strong> Data may be processed in the United States and other countries where Google operates. Transfers to the USA are covered by: (a) Google's participation in the <strong>EU-US Data Privacy Framework</strong>; and (b) the execution of <strong>Standard Contractual Clauses (SCCs)</strong> approved by the European Commission.</li>
+                    <li><strong>RevenueCat:</strong> Data is processed in the United States. Transfers are covered by <strong>Standard Contractual Clauses (SCCs)</strong>.</li>
                 </ul>
-                <p>You can delete your account at any time from essentia's Settings. To request data deletion by email, contact <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>.</p>
+                <p>You have the right to request a copy of the applicable SCCs. To do so, contact us at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>.</p>
             </section>
 
             <section>
-                <h2>8. Data Security</h2>
+                <h2>9. Data Retention</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Category</th>
+                                <th>Retention Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Account data (email, password hash)</td>
+                                <td>Until account deletion</td>
+                            </tr>
+                            <tr>
+                                <td>User content (tasks, notes, collections, locations)</td>
+                                <td>Until account deletion (cascade deletion via <code>delete-account</code> Edge Function)</td>
+                            </tr>
+                            <tr>
+                                <td>Device data (push tokens, device info)</td>
+                                <td>Until account deletion or token invalidation</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics data</td>
+                                <td>14 months (Firebase Analytics default retention)</td>
+                            </tr>
+                            <tr>
+                                <td>Crash reports</td>
+                                <td>90 days (Firebase Crashlytics default)</td>
+                            </tr>
+                            <tr>
+                                <td>Purchase / subscription history</td>
+                                <td>6 years from transaction date (Spanish Commercial Code, Art. 30)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Account deletion is permanent and irreversible. You can delete your account at any time from essentia's Settings. All remote data is deleted immediately upon account deletion via cascading database deletion.</p>
+            </section>
+
+            <section>
+                <h2>10. Data Security</h2>
+                <p>We implement the following security measures to protect your data:</p>
                 <ul>
-                    <li>Passwords are hashed using bcrypt and never stored in plaintext</li>
-                    <li>All data in transit is protected by HTTPS/TLS</li>
-                    <li>Remote data is encrypted at rest by Supabase</li>
-                    <li>Local data is stored in the app's sandboxed container, accessible only to essentia</li>
+                    <li><strong>Password hashing:</strong> Passwords are hashed using bcrypt via Supabase Auth and never stored in plaintext.</li>
+                    <li><strong>Encrypted transit:</strong> All data in transit between the App and our servers is protected by HTTPS/TLS.</li>
+                    <li><strong>Encryption at rest:</strong> Remote data in Supabase is encrypted at rest using AES-256.</li>
+                    <li><strong>Row-Level Security (RLS):</strong> Database access policies ensure users can only access their own data.</li>
+                    <li><strong>Auth tokens:</strong> We use PKCE (Proof Key for Code Exchange) for secure authentication token exchange.</li>
+                    <li><strong>Local storage:</strong> Data is stored in the app's sandboxed container on-device, accessible only to essentia. Sensitive auth tokens are stored in the system Keychain.</li>
+                    <li><strong>Access control:</strong> Direct database access is restricted; all access goes through authorised API layers.</li>
                 </ul>
                 <p>While we implement industry-standard security measures, no system can guarantee absolute security. We encourage you to use a strong, unique password for your account.</p>
             </section>
 
             <section>
-                <h2>9. Children's Privacy</h2>
-                <p>essentia is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
-            </section>
-
-            <section>
-                <h2>10. Your Rights (GDPR)</h2>
-                <p>If you are located in the European Economic Area, you have the following rights regarding your personal data:</p>
+                <h2>11. Data Breach Notification</h2>
+                <p>In the event of a personal data breach that is likely to result in a risk to your rights and freedoms, we will:</p>
                 <ul>
-                    <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
-                    <li><strong>Rectification:</strong> Request correction of inaccurate data</li>
-                    <li><strong>Erasure:</strong> Request deletion of your data (right to be forgotten)</li>
-                    <li><strong>Portability:</strong> Receive your data in a structured, machine-readable format</li>
-                    <li><strong>Restriction:</strong> Request that we limit processing of your data</li>
-                    <li><strong>Objection:</strong> Object to our processing of your data</li>
+                    <li>Notify the Spanish Data Protection Authority (AEPD) within <strong>72 hours</strong> of becoming aware of the breach, where feasible, in accordance with Article 33 GDPR;</li>
+                    <li>Notify affected users <strong>without undue delay</strong> where the breach is likely to result in a high risk to their rights and freedoms, in accordance with Article 34 GDPR.</li>
                 </ul>
-                <p>To exercise any of these rights, contact us at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>. You may also lodge a complaint with the Spanish Data Protection Authority (AEPD) at <a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>.</p>
+                <p>Breach notifications to users will be sent to the email address associated with your account and will include: a description of the nature of the breach, the categories and approximate number of records affected, the likely consequences, and the measures taken or proposed to address the breach.</p>
+                <p>If you suspect that your account has been compromised, please contact us immediately at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>.</p>
             </section>
 
             <section>
-                <h2>11. Calendar and Location Access</h2>
-                <p><strong>Calendar (EventKit):</strong> If you grant calendar permission, essentia can display and create calendar events on your device. This data stays entirely local and is never transmitted to our servers.</p>
-                <p><strong>Location (MapKit):</strong> If you use location labels for tasks, essentia uses MapKit to search for places based on text you type. Searches are sent to Apple's mapping services per Apple's privacy policy. essentia does not access your GPS coordinates and does not store or transmit any location data to our servers.</p>
+                <h2>12. Your Rights (GDPR)</h2>
+                <p>If you are located in the European Economic Area (or the UK), you have the following rights regarding your personal data under the GDPR:</p>
+                <ul>
+                    <li><strong>Access (Art. 15):</strong> Request a copy of the personal data we hold about you.</li>
+                    <li><strong>Rectification (Art. 16):</strong> Request correction of inaccurate or incomplete data.</li>
+                    <li><strong>Erasure (Art. 17):</strong> Request deletion of your data (right to be forgotten), subject to legal retention obligations.</li>
+                    <li><strong>Data portability (Art. 20):</strong> Receive your data in a structured, commonly used, machine-readable format and transmit it to another controller.</li>
+                    <li><strong>Restriction of processing (Art. 18):</strong> Request that we limit processing of your data in certain circumstances.</li>
+                    <li><strong>Objection (Art. 21):</strong> Object to processing based on legitimate interests (Section 5). We will stop processing unless we can demonstrate compelling legitimate grounds that override your interests.</li>
+                    <li><strong>Withdraw consent:</strong> Where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of prior processing.</li>
+                    <li><strong>No automated decision-making:</strong> We do not use your data for solely automated decisions that produce legal or similarly significant effects.</li>
+                    <li><strong>Lodge a complaint:</strong> You have the right to lodge a complaint with the supervisory authority in your country of residence (see Section 18 for AEPD contact details).</li>
+                </ul>
+                <p>To exercise any of these rights, contact us at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a>. We will respond within <strong>one month</strong> of receiving your request. Exercising your rights is free of charge. We may ask you to verify your identity before processing your request.</p>
             </section>
 
             <section>
-                <h2>12. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of essentia after changes constitutes your acceptance of the updated policy.</p>
+                <h2>13. Children's Privacy</h2>
+                <p>essentia is not directed at children under <strong>16 years of age</strong>. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a> and we will delete that information promptly.</p>
+                <p>If we become aware that we have inadvertently collected personal data from a child under 16, we will take immediate steps to delete such data from our records.</p>
             </section>
 
             <section>
-                <h2>13. Contact</h2>
-                <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us:</p>
+                <h2>14. Cookie Policy</h2>
+                <p>Our website at essentia.makotostudio.dev does not use cookies, tracking pixels, or any other persistent tracking technologies. No analytics or advertising trackers are deployed on the website.</p>
+                <p>The essentia App itself does not use web cookies. If this changes in the future, we will update this policy and obtain your consent where required by applicable law before deploying any tracking technologies.</p>
+            </section>
+
+            <section>
+                <h2>15. Local-First Architecture</h2>
+                <p>essentia is designed local-first. All tasks, notes, collections, and other content are stored on your device in a local SQLite database. Cloud sync is an optional feature available exclusively to essentia Pro subscribers.</p>
+                <p>Sync operates on a field-level Last-Write-Wins (LWW) basis: only the fields that have changed since the last sync are transmitted to Supabase. The cloud database acts as a supplementary backup and sync layer, not the primary data store.</p>
+                <p>If you use the free tier, none of your personal content is ever transmitted to our servers. The app is fully functional offline, with no degradation in core features.</p>
+            </section>
+
+            <section>
+                <h2>16. Permissions: Calendar, Location &amp; Others</h2>
+
+                <h3>Calendar (EventKit)</h3>
+                <p>If you grant calendar permission, essentia can display existing calendar events alongside your tasks and create new calendar events from tasks. This data stays entirely on-device and is never transmitted to our servers.</p>
+
+                <h3>Locations &amp; MapKit</h3>
+                <p>essentia supports adding named locations to tasks for location-based reminders. When you use this feature:</p>
+                <ul>
+                    <li>The <strong>location name and geographic coordinates (latitude and longitude)</strong> of places you select are stored locally on your device and, for Pro users, synchronised to Supabase.</li>
+                    <li>When you search for a place using the search field, the text you type is sent to <strong>Apple's MapKit services</strong> per Apple's privacy policy.</li>
+                    <li>essentia does <strong>not</strong> request runtime GPS / precise location permission (<code>NSLocationWhenInUseUsageDescription</code> / <code>NSLocationAlwaysUsageDescription</code>). Coordinates are derived from places you explicitly select from MapKit search results, not from your real-time GPS position.</li>
+                </ul>
+
+                <h3>Push Notifications</h3>
+                <p>If you grant push notification permission, essentia delivers task reminders via Apple Push Notification service (APNs). Notification payloads may include the title of the task being reminded. Push tokens are stored in Supabase and used solely for notification delivery.</p>
+
+                <h3>Permissions We Do NOT Request</h3>
+                <p>essentia never requests: Camera, Microphone, Photos library, Contacts, Precise GPS location (runtime), Health data, or App Tracking Transparency (ATT). Background processing is used only for App Refresh and background task scheduling.</p>
+            </section>
+
+            <section>
+                <h2>17. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. For material changes (e.g., new data categories, new third-party processors, or changes to your rights), we will provide at least <strong>30 days' advance notice</strong> by sending an email to the address associated with your account and/or displaying a prominent in-app notification.</p>
+                <p>Minor changes (corrections, clarifications) may be made without advance notice. We will always update the "Last updated" date at the top of this page.</p>
+                <p>Your continued use of the Service after the effective date of any changes constitutes your acceptance of the updated policy.</p>
+            </section>
+
+            <section>
+                <h2>18. Contact &amp; Complaints</h2>
+                <p>For any questions, requests, or concerns about this Privacy Policy or how we handle your data, contact us:</p>
                 <p><strong>Makoto Studio</strong><br>
                 <a href="mailto:developer@makotostudio.dev">developer@makotostudio.dev</a></p>
+                <p>If you are not satisfied with our response, or believe we are processing your data in violation of GDPR, you have the right to lodge a complaint with the competent supervisory authority:</p>
+                <p><strong>Agencia Española de Protección de Datos (AEPD)</strong><br>
+                C/ Jorge Juan, 6<br>
+                28001 Madrid, Spain<br>
+                Web: <a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a><br>
+                Phone: +34 901 100 099</p>
+                <p>If you are resident in another EU member state, you may also contact the supervisory authority in your country of residence.</p>
             </section>
 
         </div>
@@ -404,7 +624,7 @@
         </nav>
         <div class="footer-right">
             <a href="/es/privacy/" class="lang-switcher">Ver en Español</a>
-            <p class="footer-copy">&copy; 2025 Makoto Studio. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Makoto Studio. All rights reserved.</p>
         </div>
     </div>
 </footer>
