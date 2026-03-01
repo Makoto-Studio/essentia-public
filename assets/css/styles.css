@@ -761,16 +761,7 @@ li {
 }
 
 .device-phone::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 28px;
-    height: 8px;
-    background-color: var(--border);
-    border-radius: 4px;
-    z-index: 2;
+    display: none;
 }
 
 .device-tablet {
@@ -812,8 +803,8 @@ li {
 }
 
 .device-phone .device-screen {
-    margin-top: 20px;
-    height: 78%;
+    margin-top: 0;
+    height: 85%;
 }
 
 .platform-card-title {
